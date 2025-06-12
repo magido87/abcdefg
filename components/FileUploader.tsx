@@ -1,6 +1,6 @@
-import { useDropzone } from 'react-dropzone'
+import { useDropzone, FileRejection } from 'react-dropzone'
 
-export default function FileUploader() {
+export default function FileUploader(): JSX.Element {
   const { getRootProps, getInputProps, acceptedFiles } = useDropzone()
 
   return (
